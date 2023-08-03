@@ -18,17 +18,15 @@ const Navbar = () => {
           <ul className="hidden md:flex text-purple-100 p-8 text-lg items-center">
           </ul>
       <div className="content-between">  
-        <a href="https://elderscrolls.bethesda.net/en/" target="_blank"><img src='zlogo2.jpg' className="ml-auto rounded-full max-w-[15%]" /></a>
+        <img src='zlogo2.jpg' className="ml-auto rounded-full max-w-[15%]" />
         <div className={!nav ? "fixed left-0 top-0 w-[100%] h-full text-center p-8 bg-gradient-to-r from-black to-red-800 border-r border-r-gray-900 bg-purple-100 ease-in-out duration-200" : "fixed left-[-100%]"}>
           <ul className=" text-white">
-            <button className="flex justify-start" onClick={handleNav}>X</button>
-            <div className="flex flex-col">
+              <button className="" onClick={handleNav}>X</button>
               <Link to='/'><li onClick={handleNav} className="p-8 border-b border-gray-600">Home</li></Link>
               <Link to="/memberz"><li onClick={handleNav} className="p-8 border-b border-gray-600">MemberZ</li></Link>
               <Link to="/albumz"><li onClick={handleNav} className="p-8 border-b border-gray-600">AlbumZ</li></Link>
               <Link to="/showz"><li onClick={handleNav} className="p-8 border-b border-gray-600">ShowZ</li></Link>
               <Link to='/contact'><li onClick={handleNav} className="p-8 border-b border-gray-600">Contact</li></Link>
-            </div>
           </ul>
         </div>
       </div>
